@@ -63,4 +63,4 @@ Strategies based on probabilistic and statistical aiming mitigate the issues inh
 | RDG2 |Adaptive Threshold Parameter Estimation with Recursive Differential Grouping for Problem Decomposition|   2018   ||
 | RDG3 |Decomposition for Large-scale Optimization Problems with Overlapping Components|   2019   ||
 | DGSC |Differential Grouping with Spectral Clustering for Large Scale Global Optimization|   2019   ||
-| ERDG |An Efficient Recursive Differential Grouping for Large-Scale Continuous Problems｜2021 |
+| ERDG |An Efficient Recursive Differential Grouping for Large-Scale Continuous Problems| 2021 ||
