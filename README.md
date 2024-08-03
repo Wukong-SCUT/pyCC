@@ -7,6 +7,8 @@ We categorize some important problem decomposition strategies under the CC frame
 
 A review of the recent use of Differential Evolution for Large-Scale Global Optimization: An analysis of selected algorithms on the CEC 2013 LSGO benchmark suite (2019)
 
+Large‑scale evolutionary optimization: a survey and experimental comparative study (2020)
+
 A review of population-based metaheuristics for large-scale black-box global optimization (2022)
 
 # Static Decomposition
