@@ -16,13 +16,17 @@ As the improved version of the DG，DG2 has the following major changes over its
 
 ### The systematic selection of sample points
 
-<img src="C:\Users\悟空\AppData\Roaming\Typora\typora-user-images\image-20240807142935163.png" alt="image-20240807142935163" style="zoom: 67%;" />
+<p align="center">
+  <img src="https://github.com/Wukong-SCUT/pyCC/blob/main/picture/DG.png" alt="Your Image Description" width="300">
+</p>
 
 The core of interaction detection in DG is shown in the picture above. We can see that if we want to check the interaction between $x_1$ and $x_2$, we need 4 FEs ( $f(p_1)$, $f(p_2)$, $f(p_3)$, $f(p_4)$ ). So, for an $n$-dimensional function, the total FEs is $4 \cdot\binom{n}{2} = 2 n(n-1)$.
 
 But by systematic selection of sample points, the total number of FEs can be significantly reduced.
 
-<img src="C:\Users\悟空\AppData\Roaming\Typora\typora-user-images\image-20240807144220545.png" alt="image-20240807144220545" style="zoom:80%;" />
+<p align="center">
+  <img src="https://github.com/Wukong-SCUT/pyCC/blob/main/picture/DG2.png" alt="Your Image Description" width="300">
+</p>
 
 An simple example of the systematic selection of sample points is shown in the picture above. if we want to check the interaction of $x_1$, $x_2$ and $x_3$, we only 7 FEs : $f(a, b, c)$ , $f\left(a^{\prime}, b, c\right)$ , $f\left(a,b^{\prime},c\right)$ , $f\left(a,b,c^{\prime}\right)$ , $f(a^{\prime},b^{\prime},c)$ , $f(a^{\prime},b,c^{\prime})$ , $f(a,b^{\prime},c^{\prime})$
 
@@ -49,11 +53,15 @@ Then the total of FEs: $2n(n-1)-(\frac{n(n-1)}{2}-1)-n(n-2) = \frac{n(n+1)}{2}+1
 
 The implementation of the process that was described above:
 
-<img src="C:\Users\悟空\AppData\Roaming\Typora\typora-user-images\image-20240807160502165.png" alt="image-20240807160502165" style="zoom:50%;" />
+<p align="center">
+  <img src="https://github.com/Wukong-SCUT/pyCC/blob/main/picture/ISM.png" alt="Your Image Description" width="400">
+</p>
 
 ### Adaptive Threshold
 
-<img src="C:\Users\悟空\AppData\Roaming\Typora\typora-user-images\image-20240807205006533.png" alt="image-20240807205006533" style="zoom:67%;" />
+<p align="center">
+  <img src="https://github.com/Wukong-SCUT/pyCC/blob/main/picture/Adaptive threshold.png" alt="Your Image Description" width="300">
+</p>
 
 DG needs to set the threshold value ($\epsilon$) to detect interacting variables. Why we need to set a threshold instead of using 0 ? Because the floating-point operations incur computational roundoff errors. So we should find the least upper bound and greatest lower bound of the computational roundoff errors.
 ```math
@@ -76,4 +84,6 @@ $\eta_{0}$ is the number of entries in $\Lambda$ which are less than $e_{inf}$, 
 
 The implementation of the process that was described above:
 
-<img src="C:\Users\悟空\AppData\Roaming\Typora\typora-user-images\image-20240807203843184.png" alt="image-20240807203843184" style="zoom: 50%;" />
+<p align="center">
+  <img src="https://github.com/Wukong-SCUT/pyCC/blob/main/picture/DSM.png" alt="Your Image Description" width="400">
+</p>
