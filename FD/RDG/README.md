@@ -75,7 +75,9 @@ $$
 
 ### A recursive method to check the interaction of variable pairs
 
-<img src="C:\Users\悟空\AppData\Roaming\Typora\typora-user-images\image-20240811202350802.png" alt="image-20240811202350802" style="zoom:67%;" />
+<p align="center">
+  <img src="https://github.com/Wukong-SCUT/pyCC/blob/main/picture/RDG_roadmap.png" alt="Your Image Description" width="600">
+</p>
 
 The above figure gives a roadmap for a recursive check. First we have a set $X_1$ and the complement of $X_1$ in n-dimensional decision space $X_2$. If it is detected that there is an interaction between the two collections, $X_2$ is split in half into two subsets. 
 
@@ -87,7 +89,10 @@ After the above process is completed, clear $X_1$, extract the first variable in
 
 The implementation of the process that was described above：
 
-​               <img src="C:\Users\悟空\AppData\Roaming\Typora\typora-user-images\image-20240811204128778.png" alt="image-20240811204128778" style="zoom:67%;" /> <img src="C:\Users\悟空\AppData\Roaming\Typora\typora-user-images\image-20240811204209419.png" alt="image-20240811204209419" style="zoom: 80%;" />
+<div align="center" style="display: flex; justify-content: center;">
+  <img src="https://github.com/Wukong-SCUT/pyCC/blob/main/picture/RDG.png" alt="Algorithm 1 RDG" width="300">
+  <img src="https://github.com/Wukong-SCUT/pyCC/blob/main/picture/RDG_interact.png" alt="INTERACT function" width="300">
+</div>
 
 ## Noteworthy points
 
