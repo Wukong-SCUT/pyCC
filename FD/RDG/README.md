@@ -2,11 +2,11 @@
 
 The FEs needed by RDG：
 
-- $n$-dimensional fully separable problem：$3n$
-- $n$-dimensional fully non-separable problem：$6n$
-- $n$-dimensional partially separable problem with $n/m$ subcomponents : $3 \times 2m \times log_2(n) \times n/m = 6nlog_2(n)$
-- $n$-dimensional partially separable problem with an $m$-dimensional non-separable subcomponent：$3(n-m)+6m \times log_2(n)$
-- $n$-dimensional overlapping problem：$n/2 \times 12log_2(n)$
+- $n$-dimensional fully separable problem： $3n$
+- $n$-dimensional fully non-separable problem： $6n$
+- $n$-dimensional partially separable problem with $n/m$ subcomponents :  $3 \times 2m \times log_2(n) \times n/m = 6nlog_2(n)$
+- $n$-dimensional partially separable problem with an $m$-dimensional non-separable subcomponent： $3(n-m)+6m \times log_2(n)$
+- $n$-dimensional overlapping problem： $n/2 \times 12log_2(n)$
 
 The major ideas of RDG：
 
@@ -19,43 +19,56 @@ The major ideas of RDG：
 
 The previous paper's definition of additive separability is：
 
-*Definition 1：*A function is partially additively separable if it has the following general form:
+*Definition 1：* A function is partially additively separable if it has the following general form:
+
 $$
 f(\mathbf{x})=\sum_{i=1}^{m} f_{i}\left(\mathbf{x}_{i}\right), m>1
 $$
+
 where $f_i(\cdot )$ is a non-separable subfunction, and $m$ is the number of non-separable components of $f$.
 
 This paper gives an equivalent definition to facilitate analysis combined with mathematical theory.
 
-*Definition 2：*Let $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ be a differentiable function. Decision variables $x_{1}$ and $x_{2}$ don’t have the indirect interaction if $f(\mathbf{x})$ holds the following condition：
+*Definition 2：* Let $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ be a differentiable function. Decision variables $x_{1}$ and $x_{2}$ don’t have the indirect interaction if $f(\mathbf{x})$ holds the following condition：
+
 $$
 \frac{\partial^{2} f\left(\mathbf{x}\right)}{\partial x_{1} \partial x_{2}} = 0
 $$
+
 Then the $f$ is additively separable with respect to $x_1$ and $x_2$ , with has the general form：
+
+
 $$
-f(\mathbf{x})=f_{1}\left(\mathbf{x}_{1}\right) + f_{2}\left(\mathbf{x}_{2}\right)
+f(\mathbf{x})=f_{1}\left(X_{1}\right) + f_{2}\left(X_{2}\right)
 $$
-where $\mathbf{x}_{1}$ is the set containing variable $x_1$ and $\mathbf{x}_{2}$ is the set containing variable $x_2$. 
+
+
+where $X_{1}$ is the set containing variable  $x_1$ and $X_{2}$ is the set containing variable $x_2$. 
 
 This paper extends the interaction check between two variables to the interaction check between two sets.
 
-$\mathbf{x}_{1}=\left\{x_{1,1}, \ldots, x_{1, p}\right\}$ and $\mathbf{x}_{2}=\left\{x_{2,1}, \ldots, x_{2, p}\right\}$ are two mutually exclusive subsets of decision variables. $u^1$ and $u^2$ are the $n$-dimensional unit vectors of the two subsets respectively. If $x_{j,i} \notin \mathbf{x}_{j}$ , $u^j_i = 0$. 
+$X_{1} = \left\[ x_{1,1}, \ldots, x_{1,p} \right\]$ and $X_{2}=\left\[x_{2,1}, \ldots, x_{2, p}\right\]$ are two mutually exclusive subsets of decision variables. $u^1$ and $u^2$ are the $n$-dimensional unit vectors of the two subsets respectively. If $x_{j,i} \notin \mathbf{X}_{j}$ , $u^j_i = 0$. 
 
 *Definition 3 :* If $f(\mathbf{x})$ holds the following condition：
+
 $$
 \sum_{i=1}^{p} \sum_{j=1}^{q} \frac{\partial^{2} f\left(\mathbf{x}^{*}\right)}{\partial x_{1, i} \partial x_{2, j}} u_{1, i}^{1} u_{2, j}^{2} \neq 0
 $$
-there is some interaction between decision variables in $\mathbf{x}_{1}$ and $\mathbf{x}_{2}$
+
+there is some interaction between decision variables in $X_{1}$ and $X_{2}$
 
 According to the equivalence of line integral and inverse proposition, we can get the following results :
+
 $$
 f\left(\mathbf{x}+l_{1} \mathbf{u}^{1}+l_{2} \mathbf{u}^{2}\right)-f\left(\mathbf{x}+l_{2} \mathbf{u}^{2}\right) \neq f\left(\mathbf{x}+l_{1} \mathbf{u}^{1}\right)-f\left(\mathbf{x}\right) \Leftrightarrow \sum_{i=1}^{p} \sum_{j=1}^{q} \frac{\partial^{2} f\left(\mathbf{x}^{*}\right)}{\partial x_{1, i} \partial x_{2, j}} u_{1, i}^{1} u_{2, j}^{2} \neq 0
 $$
+
 where $l_1$ and $l_2$ are two real numbers. 
 
 In fact, this is an obvious conclusion. Even in the DG series, the essence of the formula to check the interaction of variables is the control variable method. In other words, when variable one changes, will variable two affect the change in fitness caused by variable one? Think about it, the essence of partial derivatives is this: whether the change in variable one is affected by the change in variable two. 
 
 Therefore we can use the following equation to directly check whether there is an interaction between two disjoint sets：
+
 $$
 f\left(\mathbf{x}+l_{1} \mathbf{u}^{1}+l_{2} \mathbf{u}^{2}\right)-f\left(\mathbf{x}+l_{2} \mathbf{u}^{2}\right) \neq f\left(\mathbf{x}+l_{1} \mathbf{u}^{1}\right)-f\left(\mathbf{x}\right)
 $$
