@@ -1,7 +1,7 @@
 # pyCC
 This library is a decomposition strategy library under the advanced Cooperation Coevolution （CC） framework, implemented in Python to supplement the lack of Python implementations for many strategies.
 
-We categorize some important problem decomposition strategies under the CC framework into three distinct groups：Static Grouping, Strategies Based On Probabilistic And Statistical, and Strategies Based On Variable Interactions.
+We categorize some important problem decomposition strategies under the CC framework into three distinct groups：Static Decomposition, Strategies Based On Probabilistic And Statistical, and Strategies Based On Variable Interactions.
 
 # Review
 
