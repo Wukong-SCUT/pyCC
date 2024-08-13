@@ -27,7 +27,9 @@ First of all, the threshold proposed by RDG is :
 Therefore, we need a threshold that automatically adapts to local specific conditions.
 
 According to the theory in DG2, the threshold value  $\epsilon$ obtained after analysis is：
+
 $$
-\epsilon:=\gamma_{\sqrt{n}+2}\left(\left|f\left(\mathrm{x}_{l, l}\right)\right|+\left|f\left(\mathrm{x}_{u, l}\right)\right|+\left|f\left(\mathrm{x}_{l, m}\right)\right|+\left|f\left(\mathrm{x}_{u, m}\right)\right|\right)
+\epsilon:=\gamma_{\sqrt{n}+2}\left(\left|f\left(x_{l, l}\right)\right|+\left|f\left(x_{u, l}\right)\right|+\left|f\left(x_{l, m}\right)\right|+\left|f\left(x_{u, m}\right)\right|\right)
 $$
+
 It should be noted that here is the root n plus 2, which is different from DG2. For the specific definition of the gamma function $\gamma$ , see the paper
