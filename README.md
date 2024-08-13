@@ -64,7 +64,7 @@ Strategies based on probabilistic and statistical aiming mitigate the issues inh
 | [DG2](https://github.com/Wukong-SCUT/pyCC/tree/main/FD/DG2) |DG2: A Faster and More Accurate Differential Grouping for Large-Scale Black-Box Optimization|   2017   | The parameter-free and efficiency-improving method of DG|
 | DIAT |A Global Information Based Adaptive Threshold for Grouping Large Scale Optimization Problems|   2018   ||
 | [RDG](https://github.com/Wukong-SCUT/pyCC/tree/main/FD/RDG) |A Recursive Decomposition Method for Large Scale Continuous Optimization|   2018   |Propose the recursive decomposition method of DG |
-| RDG2 |Adaptive Threshold Parameter Estimation with Recursive Differential Grouping for Problem Decomposition|   2018   ||
+| [RDG2](https://github.com/Wukong-SCUT/pyCC/tree/main/FD/RDG2) |Adaptive Threshold Parameter Estimation with Recursive Differential Grouping for Problem Decomposition|   2018   |The parameter-free method of RDG|
 | RDG3 |Decomposition for Large-scale Optimization Problems with Overlapping Components|   2019   ||
 | DGSC |Differential Grouping with Spectral Clustering for Large Scale Global Optimization|   2019   ||
 | ERDG |An Efficient Recursive Differential Grouping for Large-Scale Continuous Problems| 2021 ||
