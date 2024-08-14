@@ -16,7 +16,9 @@ As the improved version of the RDG2, RDG3 has a following major change over its 
 
 ### Clipping Control
 
-<img src="C:\Users\悟空\AppData\Roaming\Typora\typora-user-images\image-20240814093235558.png" alt="image-20240814093235558" style="zoom:67%;" />
+<p align="center">
+  <img src="https://github.com/Wukong-SCUT/pyCC/blob/main/picture/RDG3_clip.png" alt="Your Image Description" width="300">
+</p>
 
 The main idea for solving the overlapping problem is to break the linkage at shared variables, such that the level of interaction between components is low. 
 
@@ -24,6 +26,7 @@ RDG3 sets the upper bound on the space size for the overlap subspace $\epsilon_n
 
 The implementation of the process that was described above:
 
-<img src="C:\Users\悟空\AppData\Roaming\Typora\typora-user-images\image-20240814093327302.png" alt="image-20240814093327302" style="zoom:67%;" />
-
-<img src="C:\Users\悟空\AppData\Roaming\Typora\typora-user-images\image-20240814093341865.png" alt="image-20240814093341865" style="zoom:67%;" />
+<div align="center" style="display: flex; justify-content: center;">
+  <img src="https://github.com/Wukong-SCUT/pyCC/blob/main/picture/RDG3_decomposition.png" alt="Algorithm 1 RDG" width="300">
+  <img src="https://github.com/Wukong-SCUT/pyCC/blob/main/picture/RDG3_interact.png" alt="INTERACT function" width="300">
+</div>
