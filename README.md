@@ -11,6 +11,10 @@ Large‑scale evolutionary optimization: a survey and experimental comparative
 
 A review of population-based metaheuristics for large-scale black-box global optimization (2022)
 
+# Benchmark
+
+cec2013lsgo
+
 # Static Decomposition
 Static decomposition involves a one-time random decomposition, with each subgroup independently optimized and then combined to form the final optimization result.
 
