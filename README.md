@@ -13,7 +13,9 @@ A review of population-based metaheuristics for large-scale black-box global opt
 
 # Benchmark
 
-cec2013lsgo
+|Benchmark|Paper Link|Version|
+|:-:|:-:|:-:|
+|cec2013lsgo|Li X, Tang K, Omidvar M N, et al. "[**Benchmark functions for the CEC 2013 special session and competition on large-scale global optimization**](https://al-roomi.org/multimedia/CEC_Database/CEC2015/LargeScaleGlobalOptimization/CEC2015_LargeScaleGO_TechnicalReport.pdf)". (2013). |[Original code](https://github.com/dmolina/cec2013lsgo),[Python Efficient Parallel Version](https://github.com/Wukong-SCUT/cec2013lsgo_TEP)|
 
 # Static Decomposition
 Static decomposition involves a one-time random decomposition, with each subgroup independently optimized and then combined to form the final optimization result.
