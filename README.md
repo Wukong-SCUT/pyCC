@@ -74,3 +74,5 @@ Strategies based on probabilistic and statistical aiming mitigate the issues inh
 | [RDG3](https://github.com/Wukong-SCUT/pyCC/tree/main/FD/RDG3) |Decomposition for Large-scale Optimization Problems with Overlapping Components|   2019   |The clipping control for the overlapping components of RDG2|
 | DGSC |Differential Grouping with Spectral Clustering for Large Scale Global Optimization|   2019   ||
 | ERDG |An Efficient Recursive Differential Grouping for Large-Scale Continuous Problems| 2021 ||
+
+# Non-Decomposition Large Scale Global Optimization Algorithm
